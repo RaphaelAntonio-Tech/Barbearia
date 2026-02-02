@@ -1,0 +1,571 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --primary: #141414;
+    --secundary: #434343;
+    --tercery: #ffffff;
+    --destaque: #A2ff01;
+    --font: "Inter", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    ;
+}
+
+/* Menu responsivo para Tablets e celulares*/
+body {
+    background-image: url('../image/background.jpg');
+    background-repeat: no-repeat;
+    background-color: var(--primary);
+    transition: background-color 0.5s ease;
+}
+
+
+.informacoes-principais {
+    background-color: var(--primary);
+    color: var(--destaque);
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.tracinho {
+    height: 50px;
+    border: 2px solid var(--destaque);
+}
+
+/* versão responsiva de menu para Tablets / Celulares */
+
+.menu-lateral {
+    position: fixed;
+    left: -300px;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    color: var(--destaque);
+    background-color: var(--primary);
+    z-index: 50;
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.menu-lateral.ativo {
+    left: 0;
+}
+
+.menu-lateral ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 60px;
+}
+
+.menu-lateral ul li {
+    padding: 15px 30px;
+}
+
+.menu-lateral ul li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--tercery);
+    font-size: 18px;
+    gap: 10px;
+}
+
+.menu-lateral ul li a:hover {
+    color: var(--primary);
+    background-color: var(--destaque);
+    transition: 0.3s ease;
+}
+
+
+.menu-lateral ul li:hover {
+    background-color: var(--destaque);
+    color: var(--primary);
+    transition: 1s ease;
+}
+
+
+.botao-menu {
+    background-color: var(--primary);
+    color: var(--destaque);
+    position: fixed;
+    left: 50px;
+    top: 370px;
+    z-index: 99;
+    border-radius: 5px;
+    font-size: 24px;
+    border: none;
+    padding: 40px 15px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.botao-menu:hover {
+    background-color: var(--destaque);
+    color: var(--primary);
+    transition: 1s;
+}
+
+.botao-menu.ativo {
+    left: 320px;
+    z-index: 55;
+}
+
+.logo {
+    width: 300px;
+}
+
+.rede-sociais {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    position: fixed;
+    top: 850px;
+    padding: 14px 74px;
+    font-size: 30px;
+}
+
+.rede-sociais i {
+    color: var(--destaque);
+}
+
+.conteudo {
+    transition: all 0.5s ease;
+    height: 100vh;
+}
+
+body.ativo {
+    background-color: var(--secundary);
+}
+
+.background {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.753);
+    opacity: 0;
+    transition: 0.3s ease;
+    visibility: hidden;
+    z-index: 4;
+}
+
+.background.ativo {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Apresetanção */
+.apresentacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    margin: 33vh 0;
+}
+
+.apresentacao h1 {
+    color: var(--tercery);
+    text-align: center;
+    font-size: 50px;
+    margin: 0 23%;
+}
+
+.apresentacao p {
+    color: var(--tercery);
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.botao-agendamento i {
+    font-size: 20px;
+}
+
+.botao-agendamento a {
+    background-color: var(--destaque);
+    color: var(--primary);
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 30px;
+    font-size: 20px;
+}
+
+.botao-agendamento a:hover {
+    background-color: #141414;
+    border: 2px solid var(--destaque);
+    color: var(--destaque);
+    transition: 1s ease;
+}
+
+/* Problema + Solução (PC version) */
+.solucao {
+    display: flex;
+    margin: 85vh 0 100px 7%;
+}
+
+.image-solucao img {
+    width: 650px;
+}
+
+.conteudo-solucao {
+    color: var(--tercery);
+    margin: 0 150px 0 50px;
+    line-height: 2.2;
+}
+
+.conteudo-solucao h1 {
+    font-size: 50px;
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+
+.conteudo-solucao p {
+    font-size: 18px;
+}
+
+/* Problema + Solução (responsivo) */
+
+.solucao-responsivo {
+    display: none;
+}
+
+/* serviços */
+.servicos {
+    background-color: var(--tercery);
+    padding: 10vh 0 10% 7%;
+}
+
+.descricao-servicos {
+    max-width: 600px;
+}
+
+.titulo-servicos {
+    font-size: 50px;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+.descricao-servicos {
+    font-size: 18px;
+}
+
+.conteudo {
+    display: flex;
+    margin-top: 40px;
+    gap: 21%;
+}
+
+.cards-servicos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.card-servico {
+    background-color: var(--primary);
+    color: var(--tercery);
+    padding: 20px;
+    height: 381px;
+    width: 303px;
+    border-radius: 8px;
+}
+
+.icon-servicos {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.title {
+    text-align: center;
+    margin: 20px;
+}
+
+.descricao {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.preco {
+    color: var(--destaque);
+    margin: 64px 0;
+    font-size: 18px;
+    text-align: center;
+}
+
+.imagens img {
+    width: 100%;
+    margin-top: -20%;
+    margin-bottom: 127px;
+}
+
+.frase-final {
+    margin-top: 40px;
+}
+
+.servicos-responsivo {
+    display: none;
+}
+
+@media (min-width: 710px) and (max-width: 1133px) {
+
+    /* Apresetanção */
+    .apresentacao {
+        margin: 34vh 0;
+    }
+
+    .apresentacao h1 {
+        margin: 0 2%;
+    }
+
+    .apresentacao p {
+        color: var(--tercery);
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    .botao-agendamento i {
+        font-size: 20px;
+    }
+
+    .rede-sociais {
+        margin-top: 27%;
+    }
+
+    /* Problema + Solução (PC version) */
+    .solucao {
+        display: none;
+    }
+
+    /* Problema + Solução (responsivo) */
+
+    .solucao-responsivo {
+        display: flex;
+        margin: 50vh 0 0 7%;
+    }
+
+    .conteudo-solucao-responsivo {
+        color: var(--tercery);
+        margin: 30px 7% 30px 0;
+        line-height: 2.2;
+    }
+
+    .image-solucao-responsivo img {
+        margin-top: 30px;
+        width: 550px;
+    }
+
+    /* serviços */
+    .servicos {
+        display: none;
+    }
+
+    /* Serviços área (Responsivo versão) */
+    .servicos-responsivo {
+        display: block;
+        background-color: var(--tercery);
+        padding: 10vh 0 10% 7%;
+    }
+
+    .titulo-servicos-responsivo {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .descricao-servicos-responsivo {
+        margin: 50px 7%;
+    }
+
+    .imagens-responsivo img {
+        align-items: center;
+        width: 90%;
+    }
+
+    .image1 {
+        margin-bottom: -4px;
+    }
+
+    .image2 {
+        margin-bottom: 50px;
+    }
+
+    .cards-servicos-responsivo {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .card-servico-responsivo {
+        background-color: var(--primary);
+        color: var(--tercery);
+        padding: 20px;
+        height: 342px;
+        width: 264px;
+        border-radius: 8px;
+    }
+
+    .icon-servicos-responsivo {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .title-responsivo {
+        text-align: center;
+        margin: 20px;
+    }
+
+    .descricao-responsivo {
+        font-size: 18px;
+        margin: 20px 0;
+    }
+
+    .preco-responsivo {
+        color: var(--destaque);
+        margin: 0;
+        font-size: 18px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 370px) and (max-width: 710px) {
+    .logo {
+        width: 200px;
+    }
+
+    .informacoes-principais {
+        flex-direction: column;
+    }
+
+    .tracinho {
+        height: 0;
+        width: 100px;
+    }
+
+    /* Apresetanção */
+    .apresentacao {
+        margin: 26vh 0;
+    }
+
+    .apresentacao h1 {
+        font-size: 24px;
+        margin: 0 2%;
+    }
+
+    .apresentacao p {
+        color: var(--tercery);
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    .botao-agendamento a {
+        font-size: 16px;
+    }
+
+    .botao-agendamento i {
+        font-size: 20px;
+    }
+
+    .rede-sociais {
+        margin-top: -67%;
+    }
+
+    /* Problema + Solução (PC version) */
+    .solucao {
+        display: none;
+    }
+
+    /* Problema + Solução (responsivo) */
+
+    .solucao-responsivo {
+        display: flex;
+        margin: 113vh 0 0 7%;
+    }
+
+    .conteudo-solucao-responsivo {
+        color: var(--tercery);
+        margin: 30px 7% 30px 0;
+        line-height: 2.2;
+    }
+
+    .image-solucao-responsivo img {
+        margin-top: 30px;
+        width: 320px;
+    }
+
+    /* serviços */
+    .servicos {
+        display: none;
+    }
+
+    /* Serviços área (Responsivo versão) */
+    .servicos-responsivo {
+        display: block;
+        background-color: var(--tercery);
+        padding: 10vh 0 10% 7%;
+    }
+
+    .titulo-servicos-responsivo {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .descricao-servicos-responsivo {
+        margin: 50px 7%;
+    }
+
+    .imagens-responsivo img {
+        align-items: center;
+        width: 90%;
+    }
+
+    .image1 {
+        margin-bottom: -4px;
+    }
+
+    .image2 {
+        margin-bottom: 50px;
+    }
+
+    .cards-servicos-responsivo {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        gap: 50px;
+    }
+
+    .card-servico-responsivo {
+        background-color: var(--primary);
+        color: var(--tercery);
+        padding: 20px;
+        height: 342px;
+        width: 264px;
+        border-radius: 8px;
+    }
+
+    .icon-servicos-responsivo {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .title-responsivo {
+        text-align: center;
+        margin: 20px;
+    }
+
+    .descricao-responsivo {
+        font-size: 18px;
+        margin: 20px 0;
+    }
+
+    .preco-responsivo {
+        color: var(--destaque);
+        margin: 0;
+        font-size: 18px;
+        text-align: center;
+    }
+}
