@@ -312,6 +312,66 @@ body.ativo {
     display: none;
 }
 
+/* Diferenciais */
+.diferenciais {
+    margin: 20vh 7%;
+}
+
+.title-diferenciais {
+    text-align: center;
+    font-size: 50px;
+    color: var(--tercery);
+}
+
+.descricao-diferenciais {
+    color: var(--tercery);
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.cards-diferenciais {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.card-dif {
+    background-color: var(--destaque);
+    padding: 20px;
+    border-radius: 18px;
+}
+
+.title-dif {
+    display: flex;
+}
+
+.title-dif hr {
+    border: 1px solid #4343437c;
+}
+
+.icon-dif {
+    margin-right: 20px;
+}
+
+.titulo-dif h1 {
+    font-size: 37px;
+}
+
+.titulo-dif {
+    margin-bottom: 10px;
+}
+
+.conteudo-dif {
+    padding: 30px;
+}
+.mensagem-dif {
+    text-align: center;
+    margin: 100px 0;
+    color: var(--tercery);
+    font-size: 18px;
+}
 @media (min-width: 710px) and (max-width: 1133px) {
 
     /* Apresetanção */
@@ -430,6 +490,24 @@ body.ativo {
         font-size: 18px;
         text-align: center;
     }
+
+    /* Diferenciais */
+    .diferenciais {
+        margin: 10vh 7%;
+    }
+    .title-diferenciais {
+        font-size: 30px;
+    }
+
+    .cards-diferenciais {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .title-dif h1 {
+        font-size: 30px;
+    }
+
 }
 
 @media (min-width: 370px) and (max-width: 710px) {
@@ -567,5 +645,22 @@ body.ativo {
         margin: 0;
         font-size: 18px;
         text-align: center;
+    }
+
+    /* Diferenciais */
+    .diferenciais {
+        margin: 10vh 7%;
+    }
+    .title-diferenciais {
+        font-size: 30px;
+    }
+
+    .cards-diferenciais {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .title-dif h1 {
+        font-size: 30px;
     }
 }
