@@ -418,6 +418,7 @@ body.ativo {
 .title-depoimento {
     margin-bottom: 20px;
 }
+
 .frase-final-depoimento {
     text-align: center;
     font-size: 18px;
@@ -498,6 +499,101 @@ body.ativo {
     border: none;
     margin-top: 30px;
     font-size: 18px;
+}
+
+/*Footer */
+.footer {
+    background-color: var(--primary);
+}
+
+.container-footer {
+    margin: 20vh 7% 0 7%;
+    display: flex;
+    gap: 50px;
+    color: var(--tercery);
+    justify-content: space-between;
+}
+
+.logotipo img {
+    width: 237px;
+}
+
+.rede-sociais-footer {
+    display: flex;
+    gap: 50px;
+}
+
+.facebook {
+    color: var(--tercery);
+    background-color: var(--primary);
+    padding: 20px;
+    font-size: 18px;
+    border-radius: 100%;
+    border: 2px solid var(--tercery);
+}
+
+.twitter {
+    color: var(--tercery);
+    background-color: var(--primary);
+    padding: 20px;
+    font-size: 18px;
+    border-radius: 100%;
+    border: 2px solid var(--tercery);
+}
+
+.instagram {
+    color: var(--tercery);
+    background-color: var(--primary);
+    padding: 20px;
+    font-size: 18px;
+    border-radius: 100%;
+    border: 2px solid var(--tercery);
+}
+
+.tiktok {
+    color: var(--tercery);
+    background-color: var(--primary);
+    padding: 20px;
+    font-size: 18px;
+    border-radius: 100%;
+    border: 2px solid var(--tercery);
+}
+
+.lado-direito-footer {
+    display: flex;
+    gap: 200px;
+}
+
+.horario-footer h3{
+   font-size: 18px;
+   margin-bottom: 20px;
+}
+.horario-footer p {
+    color: var(--destaque);
+    margin-bottom: 20px;
+}
+
+.container-footer h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.container-footer p {
+    margin-bottom: 20px;
+}
+
+.copyright {
+    margin-top: 20vh;
+    padding: 30px 0;
+    color: var(--tercery);
+}
+
+.copyright p {
+    margin-left: 7%;
+}
+.copyright hr{
+    border-top: 2px solid var(--tercery);
+    margin-bottom: 20px;
 }
 @media (min-width: 710px) and (max-width: 1133px) {
 
@@ -653,6 +749,11 @@ body.ativo {
     /* Chamada Final */
     .title-final {
         font-size: 30px;
+    }
+
+    /*Footer */
+    .container-footer {
+        flex-direction: column;
     }
 }
 
@@ -811,7 +912,7 @@ body.ativo {
         font-size: 30px;
     }
 
-     /* Depoimentos */
+    /* Depoimentos */
     .depoimento-title {
         font-size: 30px;
     }
@@ -828,9 +929,11 @@ body.ativo {
     .endereco-container {
         padding: 30px 8px
     }
+
     .mapa img {
         width: 340px;
     }
+
     .mensagem-final-organizacao {
         width: 332px;
     }
@@ -841,11 +944,29 @@ body.ativo {
     }
 
     /* Chamada Final */
+    .chamada-final {
+        padding: 30vh 7%;
+    }
+
     .title-final {
         font-size: 30px;
     }
 
     .agendamento-final {
         padding: 20px 87px;
+    }
+
+    /*Footer */
+    .container-footer {
+        flex-direction: column;
+    }
+    .rede-sociais-footer {
+        gap: 20px;
+    }
+    .lado-direito-footer {
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       gap: 100px;
     }
 }
