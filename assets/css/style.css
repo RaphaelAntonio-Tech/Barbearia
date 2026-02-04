@@ -424,6 +424,50 @@ body.ativo {
     margin-top: 100px;
     color: var(--tercery);
 }
+
+/* Localizacao */
+.organizacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--tercery);
+    padding: 20vh 7%;
+}
+
+.title-organizacao {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.organizacao-descricao {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.endereco-container {
+    background-color: var(--primary);
+    border-radius: 14px;
+    padding: 30px 150px;
+    color: var(--tercery);
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.endereco-container p {
+    margin-bottom: 10px;
+}
+
+.mapa {
+    border: 2px solid var(--primary);
+}
+
+.mensagem-final-organizacao {
+    margin-top: 20px;
+    font-size: 18px;
+    width: 386px;
+    text-align: center;
+}
 @media (min-width: 710px) and (max-width: 1133px) {
 
     /* Apresetanção */
@@ -568,6 +612,11 @@ body.ativo {
 
     .cards-depoimentos {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* Localizacao */
+    .title-organizacao {
+        font-size: 30px;
     }
 }
 
@@ -733,5 +782,20 @@ body.ativo {
 
     .cards-depoimentos {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* Localizacao */
+    .title-organizacao {
+        font-size: 30px;
+    }
+
+    .endereco-container {
+        padding: 30px 8px
+    }
+    .mapa img {
+        width: 340px;
+    }
+    .mensagem-final-organizacao {
+        width: 387px;
     }
 }
