@@ -892,13 +892,18 @@ body.ativo {
 
     .solucao-responsivo {
         display: flex;
-        margin: 113vh 0 0 7%;
+        margin: 113vh 7% 0 7%;
     }
 
     .conteudo-solucao-responsivo {
         color: var(--tercery);
         margin: 30px 7% 30px 0;
         line-height: 2.2;
+    }
+
+    .conteudo-solucao-responsivo h1 {
+        line-height: 1.1;
+        margin-bottom: 20px;
     }
 
     .image-solucao-responsivo img {

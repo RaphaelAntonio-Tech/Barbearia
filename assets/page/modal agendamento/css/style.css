@@ -67,11 +67,11 @@ input {
 }
 
 .agendar:hover {
-     background-color: var(--primary);
-     color: var(--destaque);
-     border: 2px solid var(--destaque);
-     transform: scale(1.1);
-     transition: 1s ease;
+    background-color: var(--primary);
+    color: var(--destaque);
+    border: 2px solid var(--destaque);
+    transform: scale(1.1);
+    transition: 1s ease;
 }
 
 /* Agendamento concluído */
@@ -117,6 +117,7 @@ input {
     transform: scale(1.1);
     transition: 1s ease;
 }
+
 /* Versão para Tablets */
 @media (min-width: 710px) and (max-width: 1133px) {
 
@@ -170,19 +171,18 @@ input {
 
     /* Agendamento concluído */
 
-.agendamento-concluido {
-    width: 250px; 
-}
+    .agendamento-concluido {
+        width: 250px;
+    }
 
 
-.image {
-    width: 140px;
-}
+    .image {
+        width: 140px;
+    }
 
-.title-agendamento-concluido {
-    font-size: 20px;
-    text-align: center;
-}
-
+    .title-agendamento-concluido {
+        font-size: 20px;
+        text-align: center;
+    }
 
 }
