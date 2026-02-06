@@ -79,8 +79,7 @@ body {
 
 .menu-lateral ul li a:hover {
     color: var(--primary);
-    background-color: var(--destaque);
-    transition: 0.3s ease;
+    transition: 1s ease;
 }
 
 
@@ -278,6 +277,13 @@ body.ativo {
     border-radius: 8px;
 }
 
+.card-servico:hover {
+    transform: scale(1.1);
+    transition: 1s ease;
+    box-shadow: 5px 5px 5px #4343437c;
+    border: 2px solid var(--destaque);
+}
+
 .icon-servicos {
     text-align: center;
     margin-bottom: 20px;
@@ -345,6 +351,12 @@ body.ativo {
     border-radius: 18px;
 }
 
+.card-dif:hover {
+    transform: scale(1.1);
+    transition: 1s ease;
+    box-shadow: 5px 5px 5px #4343437c;
+}
+
 .title-dif {
     display: flex;
 }
@@ -403,6 +415,11 @@ body.ativo {
     box-shadow: 5px 5px 5px var(--primary);
 }
 
+.card-depoimento:hover {
+    border: 2px solid var(--destaque);
+    transform: scale(1.1);
+    transition: 1s ease;
+}
 .image-avaliacoes img {
     width: 200px;
     border-radius: 100%;
@@ -501,6 +518,16 @@ body.ativo {
     border: none;
     margin-top: 30px;
     font-size: 18px;
+    text-decoration: none;
+    color: var(--primary);
+}
+
+.agendamento-final:hover {
+    color: var(--destaque);
+    background-color: var(--primary);
+    border: 2px solid var(--destaque);
+    transform: scale(1.1);
+    transition: 1s ease;
 }
 
 /*Footer */
@@ -534,6 +561,13 @@ body.ativo {
     border: 2px solid var(--tercery);
 }
 
+.facebook:hover {
+   background-color: #1674EA;
+    border: 2px solid var(--tercery);
+    transform: scale(1.1);
+    transition: 1s ease;
+}
+
 .twitter {
     color: var(--tercery);
     background-color: var(--primary);
@@ -541,6 +575,12 @@ body.ativo {
     font-size: 18px;
     border-radius: 100%;
     border: 2px solid var(--tercery);
+}
+
+.twitter:hover {
+    background-color: #000000;
+    transform: scale(1.1);
+    transition: 1s ease;
 }
 
 .instagram {
@@ -552,6 +592,12 @@ body.ativo {
     border: 2px solid var(--tercery);
 }
 
+.instagram:hover {
+    background: linear-gradient(224deg,#FFDF9E, #FFC273, #E56969, #C1558B, #8A49A1, #4F5BD5);
+    transform: scale(1.1);
+    transition: 1s ease;
+}
+
 .tiktok {
     color: var(--tercery);
     background-color: var(--primary);
@@ -559,6 +605,12 @@ body.ativo {
     font-size: 18px;
     border-radius: 100%;
     border: 2px solid var(--tercery);
+}
+
+.tiktok:hover {
+    background: linear-gradient(220deg,#FE2B54, #25F4EE);
+    transform: scale(1.1);
+    transition: 1s ease;
 }
 
 .lado-direito-footer {
@@ -649,6 +701,10 @@ body.ativo {
     .solucao-responsivo h1 {
         font-size: 40px;
     }
+
+    .solucao-responsivo p {
+        font-size: 18px;
+    }
     .conteudo-solucao-responsivo {
         color: var(--tercery);
         margin: 30px 7% 30px 0;
@@ -673,6 +729,7 @@ body.ativo {
     }
 
     .titulo-servicos-responsivo {
+        font-size: 40px;
         text-align: center;
         margin-bottom: 30px;
     }
@@ -737,7 +794,7 @@ body.ativo {
     }
 
     .title-diferenciais {
-        font-size: 30px;
+        font-size: 40px;
     }
 
     .cards-diferenciais {
@@ -751,7 +808,7 @@ body.ativo {
 
     /* Depoimentos */
     .depoimento-title {
-        font-size: 30px;
+        font-size: 40px;
     }
 
     .cards-depoimentos {
@@ -760,12 +817,12 @@ body.ativo {
 
     /* Localizacao */
     .title-organizacao {
-        font-size: 30px;
+        font-size: 40px;
     }
 
     /* Chamada Final */
     .title-final {
-        font-size: 30px;
+        font-size: 40px;
     }
 
     /*Footer */
@@ -858,7 +915,7 @@ body.ativo {
     .servicos-responsivo {
         display: block;
         background-color: var(--tercery);
-        padding: 10vh 0 10% 7%;
+        padding: 10vh 7% 10% 7%;
     }
 
     .titulo-servicos-responsivo {
@@ -870,6 +927,9 @@ body.ativo {
         margin: 50px 7%;
     }
 
+    .imagens-responsivo {
+        width: 349px;
+    }
     .imagens-responsivo img {
         align-items: center;
         width: 90%;
@@ -884,9 +944,10 @@ body.ativo {
     }
 
     .cards-servicos-responsivo {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        display: flex;
+        flex-direction: column;
         align-items: center;
+        justify-content: center;
         gap: 50px;
     }
 

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="../../image/favicon.ico" type="image/x-icon">
+    <title>Agendamento</title>
+</head>
+
+<body>
+
+    <!-- Processo de agendamento -->
+    <main class="conteudo">
+        <div class="agendamento">
+            <h1 class="title-agendamento">Agendar horário</h1>
+            <div class="nome">
+                <p>Nome completo</p>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+            </div>
+            <div class="data">
+                <p>Selecione a data</p>
+                <input type="datetime-local" name="data-hora" id="data-hora">
+            </div>
+            <div class="res">
+
+            </div>
+            <button class="agendar" onclick="agendar()">Agendar horário</button>
+        </div>
+
+        <!-- Agendamento concluído -->
+        <div class="agendamento-concluido">
+            <img src="../../image/logotipo barbearia simples preto branco.png" alt="logotipo" class="image">
+            <h1 class="title-agendamento-concluido">Agendamento realizado
+                com sucesso!</h1>
+            <a href="../../../index.html" class="concluido">Voltar</a>
+        </div>
+    </main>
+    <script src="javascript/script.js"></script>
+</body>
+
+</html>
