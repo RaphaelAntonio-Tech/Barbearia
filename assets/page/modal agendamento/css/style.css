@@ -168,4 +168,21 @@ input {
         font-size: 14px;
     }
 
+    /* Agendamento concluído */
+
+.agendamento-concluido {
+    width: 250px; 
+}
+
+
+.image {
+    width: 140px;
+}
+
+.title-agendamento-concluido {
+    font-size: 20px;
+    text-align: center;
+}
+
+
 }
