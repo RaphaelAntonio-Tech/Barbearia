@@ -136,6 +136,11 @@ body {
     color: var(--destaque);
 }
 
+.rede-sociais i:hover {
+    transform: scale(1.1);
+    transition: 1s ease;
+}
+
 .conteudo {
     transition: all 0.5s ease;
     height: 100vh;
@@ -935,9 +940,10 @@ body.ativo {
     .imagens-responsivo {
         width: 349px;
     }
+    
     .imagens-responsivo img {
         align-items: center;
-        width: 90%;
+        width: 100%;
     }
 
     .image1 {
